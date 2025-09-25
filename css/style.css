@@ -35,7 +35,6 @@ body {
     rgba(27, 27, 27, 0.9),
     rgba(0, 0, 0, 0)
   );
-  /* background: #181818; */
   position: fixed;
   top: 0;
   left: 0;
@@ -44,7 +43,7 @@ body {
 }
 
 .navbar.hide {
-  top: -80px; /* geser navbar ke atas, sembunyikan */
+  top: -80px; 
 }
 
 .navbar .navbar-nav a {
@@ -101,9 +100,9 @@ body {
 /* Overlay konten */
 .hero-overlay {
   position: absolute;
-  bottom: 40px; /* jarak dari bawah */
-  left: 40px; /* jarak dari kiri */
-  right: 40px; /* jarak dari kanan */
+  bottom: 40px; 
+  left: 40px; 
+  right: 40px; 
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -116,7 +115,7 @@ body {
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.2px;
-  color: #000000; /* hitam */
+  color: #000000;
   padding-top: 100px;
 }
 
@@ -125,39 +124,38 @@ body {
   font-size: 32px;
   font-weight: 400;
   margin-top: 10px;
-  color: #000000; /* hitam */
+  color: #000000;
   margin-bottom: 15px;
 }
 
 .hero-description {
   font-size: 16px;
   font-weight: 400;
-  color: #333333; /* abu-abu gelap */
+  color: #333333; 
   margin-bottom: 30px;
 }
 
 #changing-text {
-  color: #ff7300; /* warna teks berubah */
+  color: #ff7300; 
   transition: opacity 0.5s ease-in-out;
 }
 
 /* Tombol */
 .hero-btn {
-  background: #ff7300; /* warna kuning */
+  background: #ff7300; 
   color: #000000;
   padding: 15px 30px;
   font-weight: 600;
   text-decoration: none;
-  /* border-radius: 3px; */
   transition: 0.3s;
 }
 
 .hero-btn:hover {
-  background: #e0a800; /* sedikit lebih gelap */
+  background: #e0a800; 
 }
 
 .navbar .navbar-logo img {
-  height: 40px; /* lebih kecil */
+  height: 40px; 
   width: auto;
   margin-top: 10px;
 }
@@ -168,8 +166,6 @@ body {
   padding: 10px 20px;
   font-weight: 450;
   transition: 0.3s;
-  /* margin-left: 20px; */
-  /* margin-top: 100px; */
   text-decoration: none;
 }
 
@@ -191,7 +187,7 @@ body {
   text-align: center;
   font-size: 36px;
   margin-bottom: 40px;
-  color: var(--secondary); /* orange */
+  color: var(--secondary); 
 }
 
 .about-container {
@@ -326,7 +322,6 @@ body {
 }
 
 /* CONTACT SECTION */
-
 .contact-section {
   padding: 80px 10%;
   background: #181818;
