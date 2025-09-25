@@ -1,0 +1,385 @@
+:root {
+  --primary: #181818;
+  --bg: #ffffff;
+  --secondary: #ff7300;
+}
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg);
+  color: black;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 7%;
+  /* background-color: rgba(1, 1, 1, 0.8);  */
+  /* background-color: #181818; */
+  transition: top 0.3s;
+  background: linear-gradient(
+    to bottom,
+    rgba(27, 27, 27, 0.9),
+    rgba(0, 0, 0, 0)
+  );
+  /* background: #181818; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar.hide {
+  top: -80px; /* geser navbar ke atas, sembunyikan */
+}
+
+.navbar .navbar-nav a {
+  font-size: 11px;
+  font-weight: 200;
+  color: #ffffff;
+  font-weight: 400;
+  display: inline-block;
+  margin: 0 20px;
+}
+
+/* Tambahan untuk menu mobile */
+.navbar-nav.active {
+  display: block;
+}
+
+.navbar-nav a:hover {
+  color: #e0a800;
+}
+
+.navbar .navbar-extra a {
+  color: #ffffff;
+  margin: 0 10px;
+}
+
+.navbar .navbar-extra a svg {
+  width: 16px;
+  height: 16px;
+}
+
+.navbar .navbar-extra a:hover {
+  color: #e0a800;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+  color: #fff;
+  margin-top: 100px;
+}
+
+.hero #bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Overlay konten */
+.hero-overlay {
+  position: absolute;
+  bottom: 40px; /* jarak dari bawah */
+  left: 40px; /* jarak dari kiri */
+  right: 40px; /* jarak dari kanan */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Judul besar */
+.hero-title {
+  font-family: "League Gothic", sans-serif;
+  font-size: 100px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+  color: #000000; /* hitam */
+  padding-top: 100px;
+}
+
+/* Percobaan */
+.hero-subtitle {
+  font-size: 32px;
+  font-weight: 400;
+  margin-top: 10px;
+  color: #000000; /* hitam */
+  margin-bottom: 15px;
+}
+
+.hero-description {
+  font-size: 16px;
+  font-weight: 400;
+  color: #333333; /* abu-abu gelap */
+  margin-bottom: 30px;
+}
+
+#changing-text {
+  color: #ff7300; /* warna teks berubah */
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Tombol */
+.hero-btn {
+  background: #ff7300; /* warna kuning */
+  color: #000000;
+  padding: 15px 30px;
+  font-weight: 600;
+  text-decoration: none;
+  /* border-radius: 3px; */
+  transition: 0.3s;
+}
+
+.hero-btn:hover {
+  background: #e0a800; /* sedikit lebih gelap */
+}
+
+.navbar .navbar-logo img {
+  height: 40px; /* lebih kecil */
+  width: auto;
+  margin-top: 10px;
+}
+
+.button-about {
+  background: var(--secondary);
+  color: #fff;
+  padding: 10px 20px;
+  font-weight: 450;
+  transition: 0.3s;
+  /* margin-left: 20px; */
+  /* margin-top: 100px; */
+  text-decoration: none;
+}
+
+.about-me {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+  color: #333;
+  margin-top: 100vh;
+}
+
+.about-me {
+  padding: 80px 10%;
+  background: #181818;
+  color: white;
+}
+
+.about-me h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: var(--secondary); /* orange */
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.about-left {
+  text-align: center;
+}
+
+.profile-pic {
+  width: 350px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.skills-icon {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.skills-icon img {
+  width: 40px;
+  height: 40px;
+}
+
+.about-right {
+  max-width: 500px;
+}
+
+.about-right h3 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.about-right p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.about-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn-primary {
+  background: var(--secondary);
+  color: #fff;
+  padding: 10px 20px;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background: #e06900;
+}
+
+.btn-outline {
+  border: 2px solid var(--secondary);
+  color: var(--secondary);
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn-outline:hover {
+  background: var(--secondary);
+  color: white;
+}
+
+/* PORTFOLIO SECTION */
+.portofolio-section {
+  padding: 80px 10%;
+  background: #fff;
+  color: #181818;
+  text-align: center;
+}
+
+.portofolio-section h2 {
+  font-size: 36px;
+  margin-bottom: 50px;
+  color: var(--secondary);
+}
+
+.portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.portfolio-item {
+  background: #f9f9f9;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: left;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.portfolio-item h3 {
+  font-size: 20px;
+  margin: 15px;
+  color: #181818;
+}
+
+.portfolio-item p {
+  font-size: 14px;
+  margin: 0 15px 20px;
+  color: #555;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* CONTACT SECTION */
+
+.contact-section {
+  padding: 80px 10%;
+  background: #181818;
+  color: white;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: var(--secondary);
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 15px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 2px solid #333;
+  background: #fff;
+  color: #181818;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--secondary);
+  box-shadow: 0 0 8px rgba(255, 115, 0, 0.4);
+}
+
+.contact-form textarea {
+  resize: none;
+  height: 120px;
+}
+
+.contact-form .btn-primary {
+  background: var(--secondary);
+  color: #fff;
+  padding: 12px 20px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form .btn-primary:hover {
+  background: #e06900;
+}

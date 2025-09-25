@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Nama tab -->
+    <title>Portofolio Afif Muhammad Darmawan</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;700&family=League+Gothic&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">
+        <img src="images/logo.png" alt="afif.logo" />
+      </a>
+      <div class="navbar-nav">
+        <a href="#">Home</a>
+        <a href="#aboutme">About Me</a>
+        <a href="#portofolio">Portofolio</a>
+        <a href="#other">Other</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="navbar-extra">
+        <a href="#" id="search"><i data-feather="search"></i></a>
+        <a href="#" id="menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-overlay">
+        <div>
+          <h1 class="hero-title">AFIF MUHAMMAD DARMAWAN</h1>
+          <h2 class="hero-subtitle">
+            I'm <span id="changing-text">Web Developer.</span>
+          </h2>
+          <h3 class="hero-description">
+            graphic design is a passion, currently I focus on UIUX design and
+            web design
+          </h3>
+          <a href="#aboutme" class="button-about">More About Me</a>
+        </div>
+        <a href="#portofolio" class="hero-btn">EXPLORE PROJECT ></a>
+      </div>
+    </section>
+    <!-- About Me Section -->
+    <section id="aboutme" class="about-me">
+      <h2>About Me</h2>
+      <div class="about-container">
+        <!-- Foto + Icon -->
+        <div class="about-left">
+          <img src="images/foto.png" alt="Foto Afif" class="profile-pic" />
+        </div>
+        <!-- Teks -->
+        <div class="about-right">
+          <h3>I'm Afif Muhammad Darmawan</h3>
+          <p>
+            A web developer focusing on front-end and UI/UX, committed to
+            continuously improving design and development skills.
+          </p>
+          <div class="about-buttons">
+            <a href="#portofolio" class="btn-primary">Portfolio</a>
+            <a
+              href="https://drive.google.com/file/d/1y_YPvYeIXELhTku7L6sMRoxwedC7yh4E/view"
+              target="_blank"
+              class="btn-outline"
+            >
+              View My CV
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="portofolio" class="portofolio-section">
+      <h2>Portofolio</h2>
+      <div class="portfolio-container">
+        <!-- Project 1 -->
+        <div class="portfolio-item">
+          <img src="images/project1.png" alt="Project 1" />
+          <h3>Learn Quran with StudyQuran</h3>
+          <p>
+            Quran learning application with gamification... 1st place in
+            Friendship Fasilkom UNEJ
+          </p>
+        </div>
+        <!-- Project 2 -->
+        <div class="portfolio-item">
+          <img src="images/project2.png" alt="Project 2" />
+          <h3>OnHear</h3>
+          <p>
+            PARTI 2025 Competition : an application for the deaf with smartwatch
+            & hearing integration
+          </p>
+        </div>
+        <!-- Add more projects as needed -->
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <h2>Contact Me</h2>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn-primary">Send Message</button>
+      </form>
+    </section>
+
+    <!-- Hero End -->
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
